@@ -1,0 +1,120 @@
+Bitcoin Core Integration Test Results and RPC Commands
+1. getblockchaininfo
+{
+  "chain": "main",
+  "blocks": 341789,
+  "headers": 919333,
+  "bestblockhash": "000000000000000002a01348b8626e608ff0d65ab04887ca627a818ea4f1e3f5",
+  "bits": "181aa3c0",
+  "target": "00000000000000001aa3c0000000000000000000000000000000000000000000",
+  "difficulty": 41272873894.69702,
+  "time": 1422980243,
+  "mediantime": 1422976640,
+  "verificationprogress": 0.04663090866214623,
+  "initialblockdownload": true,
+  "chainwork": "00000000000000000000000000000000000000000004729dd26f65515bfdb160",
+  "size_on_disk": 4496774615,
+  "pruned": true,
+  "pruneheight": 330643,
+  "automatic_pruning": true,
+  "prune_target_size": 5242880000,
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+2. getnetworkinfo
+{
+  "version": 309900,
+  "subversion": "/Satoshi:30.99.0/",
+  "protocolversion": 70016,
+  "localservices": "0000000000000c08",
+  "localservicesnames": [
+    "WITNESS",
+    "NETWORK_LIMITED",
+    "P2P_V2"
+  ],
+  "localrelay": true,
+  "timeoffset": -1,
+  "networkactive": true,
+  "connections": 10,
+  "connections_in": 0,
+  "connections_out": 10,
+  "networks": [
+    {
+      "name": "ipv4",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "ipv6",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "onion",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "i2p",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "cjdns",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }
+  ],
+  "relayfee": 0.00000100,
+  "incrementalfee": 0.00000100,
+  "localaddresses": [
+  ],
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+3. getwalletinfo
+4. getnewaddress
+3. getwalletinfo
+{
+  "walletname": "FionaWallet",
+  "walletversion": 169900,
+  "format": "sqlite",
+  "txcount": 0,
+  "keypoolsize": 3999,
+  "keypoolsize_hd_internal": 4000,
+  "paytxfee": 0.00000000,
+  "private_keys_enabled": true,
+  "avoid_reuse": false,
+  "scanning": false,
+  "descriptors": true,
+  "external_signer": false,
+  "blank": false,
+  "birthtime": 1760612557,
+  "flags": [
+    "last_hardened_xpub_cached",
+    "descriptor_wallet"
+  ],
+  "lastprocessedblock": {
+    "hash": "000000000000000012ee7805c83ef7f9c6aebbeeb81478d273338603279c8c50",
+    "height": 342852
+  }
+}
+4. getnewaddress
+bc1q4ev22cwfzwcc5agchx2hmmf8gy86p739lpzqqx
+5. getbalance
+0.00000000
+6. listtransactions
+[
+]
